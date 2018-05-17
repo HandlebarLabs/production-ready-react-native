@@ -11,6 +11,7 @@ import { Header } from '../components/Header';
 import { AlertConsumer } from '../components/Alert';
 
 import { changeCurrencyAmount, swapCurrency, getInitialConversion } from '../actions/currencies';
+import { changeNetworkStatus } from '../actions/network';
 
 class Home extends Component {
   constructor(props) {
@@ -34,7 +35,7 @@ class Home extends Component {
   }
 
   handleNetworkChange = (info) => {
-    console.log('network info', info);
+    this.props.dispatch(changeNetworkStatus(info.type));
   };
 
   handleChangeText = (text) => {
