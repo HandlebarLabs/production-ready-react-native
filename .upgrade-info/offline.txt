@@ -1,5 +1,6 @@
 master
 offline-start
+offline-packages
 offline-netinfo
 offline-network-info-redux
 offline-notifying-connection-status
