@@ -1,9 +1,9 @@
 master
 offline-start
-netinfo
-network-info-redux
-notifying-connection-status
-saving-data
-handling-offline-requests
-clearing-error-messages
-handling-timed-out-requests
+offline-netinfo
+offline-network-info-redux
+offline-notifying-connection-status
+offline-saving-data
+offline-handling-offline-requests
+offline-clearing-error-messages
+offline-handling-timed-out-requests
