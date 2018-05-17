@@ -9,7 +9,14 @@ import {
   CONVERSION_ERROR,
 } from '../actions/currencies';
 
-export const getLatestRate = currency => fetch(`https://api.fixer.io/latest?base=${currency}`);
+const requestTimeout = (time, promise) =>
+  new Promise((resolve, reject) => {
+    setTimeout(() => reject(new Error('Request timed out.')), time);
+    promise.then(resolve, reject);
+  });
+
+export const getLatestRate = currency =>
+  requestTimeout(2000, fetch(`https://api.fixer.io/latest?base=${currency}`));
 
 const fetchLatestConversionRates = function* ({ currency }) {
   const { connected, hasCheckedStatus } = yield select(state => state.network);
