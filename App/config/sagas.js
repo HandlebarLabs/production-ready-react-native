@@ -11,6 +11,15 @@ import {
 export const getLatestRate = currency => fetch(`https://api.fixer.io/latest?base=${currency}`);
 
 const fetchLatestConversionRates = function* ({ currency }) {
+  const { connected, hasCheckedStatus } = yield select(state => state.network);
+  if (!connected && hasCheckedStatus) {
+    yield put({
+      type: CONVERSION_ERROR,
+      error: 'Not connected to the internet. Conversion rate may be outdated or unavailable!',
+    });
+    return;
+  }
+
   try {
     let usedCurrency = currency;
     if (usedCurrency === undefined) {
