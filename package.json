@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "android": "react-native run-android",
-    "ios": "react-native run-ios",
+    "ios": "react-native run-ios --simulator='iPhone X'",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "start": "node node_modules/react-native/local-cli/cli.js start",
