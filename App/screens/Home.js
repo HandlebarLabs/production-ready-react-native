@@ -19,8 +19,8 @@ class Home extends Component {
     this.props.dispatch(getInitialConversion());
   }
 
-  componentDidUpdate(prevProps) {
-    if (this.props.currencyError && !prevProps.currencyError) {
+  componentDidUpdate() {
+    if (this.props.currencyError) {
       this.props.alertWithType('error', 'Error', this.props.currencyError);
     }
   }
