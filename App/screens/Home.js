@@ -24,8 +24,8 @@ class Home extends Component {
     NetInfo.addEventListener('connectionChange', this.handleNetworkChange);
   }
 
-  componentDidUpdate(prevProps) {
-    if (this.props.currencyError && !prevProps.currencyError) {
+  componentDidUpdate() {
+    if (this.props.currencyError) {
       this.props.alertWithType('error', 'Error', this.props.currencyError);
     }
   }
