@@ -10,5 +10,4 @@ testing-redux-actions-snapshot
 testing-redux-reducer
 testing-redux-reducer-snapshot
 testing-user-interaction-enzyme
-testing-user-interaction-jest
 testing-integration-screen
