@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`changeCurrencyAmount converts a string value to a float 1`] = `
+Object {
+  "amount": 100,
+  "type": "CHANGE_CURRENCY_AMOUNT",
+}
+`;
+
+exports[`changeCurrencyAmount creates an action with an amount of 100 1`] = `
+Object {
+  "amount": 100,
+  "type": "CHANGE_CURRENCY_AMOUNT",
+}
+`;
+
+exports[`getInitialConversion creates a properly formatted action 1`] = `
+Object {
+  "type": "GET_INITIAL_CONVERSION",
+}
+`;
