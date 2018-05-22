@@ -40,11 +40,7 @@
   },
   "jest": {
     "preset": "react-native",
-    "collectCoverageFrom": [
-      "App/**/*.js"
-    ],
-    "setupFiles": [
-      "./tests/setup.js"
-    ]
+    "collectCoverageFrom": ["App/**/*.js"],
+    "setupFiles": ["./tests/setup.js"]
   }
 }
