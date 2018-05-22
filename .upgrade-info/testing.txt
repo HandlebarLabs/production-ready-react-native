@@ -11,3 +11,4 @@ testing-redux-reducer
 testing-redux-reducer-snapshot
 testing-user-interaction-enzyme
 testing-integration-screen
+testing-redux-saga
