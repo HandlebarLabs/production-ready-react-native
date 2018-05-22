@@ -10,7 +10,7 @@ import {
 
 export const getLatestRate = currency => fetch(`https://api.fixer.io/latest?base=${currency}`);
 
-const fetchLatestConversionRates = function* ({ currency }) {
+export const fetchLatestConversionRates = function* ({ currency }) {
   try {
     let usedCurrency = currency;
     if (usedCurrency === undefined) {
