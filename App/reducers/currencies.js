@@ -8,7 +8,7 @@ import {
   CONVERSION_ERROR,
 } from '../actions/currencies';
 
-const initialState = {
+export const initialState = {
   baseCurrency: 'USD',
   quoteCurrency: 'GBP',
   amount: 100,
