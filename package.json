@@ -34,7 +34,8 @@
     "prettier": "^1.12.1",
     "prettier-eslint": "^8.8.1",
     "react-dom": "16.3.1",
-    "react-test-renderer": "16.3.1"
+    "react-test-renderer": "16.3.1",
+    "redux-mock-store": "^1.5.1"
   },
   "jest": {
     "preset": "react-native",
