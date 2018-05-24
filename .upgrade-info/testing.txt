@@ -1,0 +1,14 @@
+master
+testing-start
+testing-packages
+testing-first-testing
+testing-tracking-test-coverage
+testing-organizing
+testing-component-snapshot
+testing-redux-actions
+testing-redux-actions-snapshot
+testing-redux-reducer
+testing-redux-reducer-snapshot
+testing-user-interaction-enzyme
+testing-integration-screen
+testing-redux-saga
