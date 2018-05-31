@@ -8,7 +8,8 @@ import {
   CONVERSION_ERROR,
 } from '../actions/currencies';
 
-export const getLatestRate = currency => fetch(`https://api.fixer.io/latest?base=${currency}`);
+export const getLatestRate = currency =>
+  fetch(`https://fixer.handlebarlabs.com/latest?base=${currency}`);
 
 const fetchLatestConversionRates = function* ({ currency }) {
   try {
