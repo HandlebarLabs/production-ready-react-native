@@ -2,9 +2,6 @@ master
 release-start
 release-packages
 release-ios-preparing
-release-ios-create
-release-ios-building
-release-ios-submit
 release-android-create
 release-android-building
 release-android-submit
