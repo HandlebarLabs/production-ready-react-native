@@ -16,7 +16,7 @@ const requestTimeout = (time, promise) =>
   });
 
 export const getLatestRate = currency =>
-  requestTimeout(2000, fetch(`https://api.fixer.io/latest?base=${currency}`));
+  fetch(`https://fixer.handlebarlabs.com/latest?base=${currency}`);
 
 const fetchLatestConversionRates = function* ({ currency }) {
   const { connected, hasCheckedStatus } = yield select(state => state.network);
