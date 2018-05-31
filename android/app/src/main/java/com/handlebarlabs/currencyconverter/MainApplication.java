@@ -1,4 +1,4 @@
-package com.currencyconverter;
+package com.handlebarlabs.currencyconverter;
 
 import android.app.Application;
 

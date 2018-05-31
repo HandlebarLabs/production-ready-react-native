@@ -1,4 +1,4 @@
-package com.currencyconverter;
+package com.handlebarlabs.currencyconverter;
 
 import com.facebook.react.ReactActivity;
 import org.devio.rn.splashscreen.SplashScreen;
