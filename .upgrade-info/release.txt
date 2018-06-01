@@ -3,5 +3,3 @@ release-start
 release-packages
 release-ios-preparing
 release-android-create
-release-android-building
-release-android-submit
