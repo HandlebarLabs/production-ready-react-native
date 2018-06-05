@@ -102,7 +102,7 @@ android {
         applicationId "com.handlebarlabs.currencyconverter"
         minSdkVersion 16
         targetSdkVersion 22
-        versionCode 5
+        versionCode project.hasProperty('versionCode') ? project.property('versionCode') as int : 1
         versionName "1.0"
         ndk {
             abiFilters "armeabi-v7a", "x86"

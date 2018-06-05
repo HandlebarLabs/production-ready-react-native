@@ -23,7 +23,17 @@ platform :android do
 
   desc "Submit a new Beta Build to Google Play Beta"
   lane :beta do
-    gradle(task: "clean assembleRelease")
+    versionCode = File.read("metadata/versionCode").to_i
+    versionCode = versionCode + 1
+
+    f = File.new("metadata/versionCode", "w")
+    f.write(versionCode)
+    f.close
+
+    gradle(
+      task: "clean assembleRelease",
+      properties: { 'versionCode' => versionCode }
+    )
     upload_to_play_store(track: 'beta')
 
     # sh "your_script.sh"
