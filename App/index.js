@@ -1,12 +1,13 @@
 import React from 'react';
 import { Provider } from 'react-redux';
 import SplashScreen from 'react-native-splash-screen';
+import codePush from 'react-native-code-push';
 
 import Navigator from './config/routes';
 import { AlertProvider } from './components/Alert';
 import store from './config/store';
 
-export default class App extends React.Component {
+class App extends React.Component {
   componentDidMount() {
     SplashScreen.hide();
   }
@@ -21,3 +22,5 @@ export default class App extends React.Component {
     );
   }
 }
+
+export default codePush(App);

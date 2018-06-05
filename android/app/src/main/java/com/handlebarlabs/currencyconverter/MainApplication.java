@@ -21,7 +21,7 @@ public class MainApplication extends Application implements ReactApplication {
         protected String getJSBundleFile() {
         return CodePush.getJSBundleFile();
         }
-    
+
     @Override
     public boolean getUseDeveloperSupport() {
       return BuildConfig.DEBUG;
@@ -31,7 +31,7 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
-            new CodePush(null, getApplicationContext(), BuildConfig.DEBUG),
+            new CodePush("XKsBzkjhJZEL1kovif6CbimlGmbDbaa2dd1f-a186-4ab8-9841-5f2df65b3cfe", getApplicationContext(), BuildConfig.DEBUG),
             new SplashScreenReactPackage()
       );
     }
