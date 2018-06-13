@@ -31,7 +31,7 @@ class Home extends Component {
   }
 
   componentWillUnmount() {
-    NetInfo.removeEventListener('change', this.handleNetworkChange);
+    NetInfo.removeEventListener('connectionChange', this.handleNetworkChange);
   }
 
   handleNetworkChange = (info) => {
