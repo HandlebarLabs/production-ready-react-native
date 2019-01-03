@@ -1,0 +1,7 @@
+master
+assets-start
+assets-packages
+assets-ios-icon
+assets-android-icon
+assets-ios-splash-screen
+assets-android-splash-screen
