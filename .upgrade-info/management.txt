@@ -1,0 +1,10 @@
+master
+management-start
+management-packages
+management-ios-fastlane
+management-android-fastlane
+management-ios-promoting
+management-android-promoting
+management-installing-codepush
+management-ota-updates
+management-continuous-integration
